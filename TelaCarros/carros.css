@@ -1,0 +1,183 @@
+/* Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-color: #00bbff;
+    --second-color: #0080ff;
+    --text-color: #444;
+    --gradient: linear-gradient(#32b7e7, #2e50e6);
+}
+
+/* Custom Scrollbar */
+html::webkit-scrollbar {
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+section {
+    padding: 50px 100px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eeeff1;
+    padding: 15px 100px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.navbar a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--gradient);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+.header-btn a {
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.header-btn .entrar {
+    background: #0080ff;
+    color: #FFF;
+    border-radius: 0.5rem;
+}
+
+.header-btn .entrar:hover {
+    background: var(--main-color);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .car-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .car-card {
+    width: 350px;
+    height: 365px; /* Ajuste conforme necessário */
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: background-color 0.3s;
+    margin-top: 5%;
+  
+  }
+
+  .car-card1 {
+    width: 350px;
+    height: 365px; /* Ajuste conforme necessário */
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: background-color 0.3s;
+    margin-top: 5%;
+    margin-right: 60%;
+  }
+  
+  .car-card:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .car-image {
+    width: 100%;
+    height: 200px; /* Ajuste conforme necessário */
+    object-fit: cover;
+  }
+  
+  .car-details {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  h2, p {
+    margin: 0;
+  }
+  
+  button {
+    background-color: #0080ff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 9px;
+    border: none;
+    border-radius: 12px;
+  }
+  
+  button:hover {
+    background-color: #00bbff;
+  }
+  
